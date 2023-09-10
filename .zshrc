@@ -67,3 +67,17 @@ alias hs='history'
 
 alias ls='lsd '
 alias ll='lsd -la'
+
+
+
+### ctrl+arrows
+bindkey "\e[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
+
+### ctrl+delete
+bindkey "\e[3;5~" kill-word
+# urxvt
+bindkey "\e[3^" kill-word
+
+### ctrl+backspace
+bindkey '^H' backward-kill-word
