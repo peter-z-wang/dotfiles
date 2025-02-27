@@ -1,0 +1,70 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+up",         // whatever keybinding you want
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10         // change this if you want
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",        // whatever keybinding you want
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10         // change
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+m",           // or whatever binding you choose
+        "command": "cursorMove",
+        "args": {
+            "to": "viewPortCenter"
+        }
+    },
+    {
+        "key": "ctrl+alt+k",         // whatever keybinding you like
+        "command": "editorScroll",
+        "args": {
+          "by": "line",
+          "to": "up",
+          // "revealCursor": false,
+          "value": 10
+        },
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+j",                // whatever keybinding you like
+        "command": "editorScroll",
+        "args": {
+          "by": "line",
+          "to": "down",
+      
+          // "revealCursor": false,   // set to true if you did want to move the cursor
+                                      // false is the default
+           "value": 10
+        },
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "cursorLineEnd",
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "cursorLineStart",
+    },
+]
